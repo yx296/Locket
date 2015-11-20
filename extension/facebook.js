@@ -1,5 +1,5 @@
 //### Runs in the facebook messenger iFrame
-//**Is repsonsible primarily for reading from and writing to the Facebook Messenger DOM**
+//**Is responsible primarily for reading from and writing to the Facebook Messenger DOM**
 var backgroundCheckInterval = 500;
 var rescanDOMInterval = 500;
 var seenMessageGroup = {};
@@ -42,7 +42,7 @@ $(document).ready(function() {
       return results;
     };
 
-    // Checks for mew messages from background process
+    // Checks for new messages from background process
     var checkWithBackgroundProcess = function() {
       chrome.runtime.sendMessage({event: 'updateStatus' }, 
         function(response) {
